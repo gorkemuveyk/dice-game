@@ -2,11 +2,15 @@
   "users": [
     {
       "id": 3,
-      "name": "Can Boz"
+      "name": "Görkem Üveyk"
     },
     {
-      "name": "Jenna Wunsch I",
+      "name": "Ecem Güleren",
       "id": 4
+    },
+    {
+      "name": "Lucille Daniel",
+      "id": 5
     }
   ],
   "albums": [
