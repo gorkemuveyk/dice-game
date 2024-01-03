@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropType from "prop-types";
 
 const RoleDice = ({ roleDice, currentDice }) => {
   return (
@@ -30,3 +31,8 @@ const DiceContainer = styled.div`
     font-size: 24px;
   }
 `;
+
+RoleDice.propTypes = {
+  roleDice: PropType.func,
+  currentDice: PropType.number,
+};

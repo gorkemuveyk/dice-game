@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropType from "prop-types";
 
 const TotalScore = ({ score }) => {
   return (
@@ -24,3 +25,7 @@ const ScoreContainer = styled.div`
     font-size: 24px;
   }
 `;
+
+TotalScore.propTypes = {
+  score: PropType.number,
+};

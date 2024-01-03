@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropType from "prop-types";
 
 const NumberSelector = ({
   selectedNumber,
@@ -31,6 +32,13 @@ const NumberSelector = ({
 };
 
 export default NumberSelector;
+
+NumberSelector.propTypes = {
+  selectedNumber: PropType.number,
+  setSelectedNumber: PropType.func,
+  error: PropType.string,
+  setError: PropType.func,
+};
 
 const NumberSelectorContainer = styled.div`
   display: flex;
