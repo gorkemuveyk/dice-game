@@ -30,6 +30,23 @@ const DiceContainer = styled.div`
   p {
     font-size: 24px;
   }
+
+  @media (max-width: 576px) {
+    .dice {
+      width: 150px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .dice {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 RoleDice.propTypes = {

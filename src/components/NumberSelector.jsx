@@ -57,6 +57,37 @@ const NumberSelectorContainer = styled.div`
   p {
     font-size: 24px;
   }
+
+  @media (max-width: 576px) {
+    align-items: center;
+    justify-content: center;
+
+    .flex {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .error {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p {
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -65,9 +96,16 @@ const Box = styled.div`
   font-size: 24px;
   font-weight: bold;
   border: 1px solid black;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background-color: ${(props) => (props.isSelected ? "#000" : "#fff")};
   color: ${(props) => (props.isSelected ? "#fff" : "#000")};
+
+  @media (max-width: 576px) {
+    margin-top: 5px;
+    width: 36px;
+    height: 36px;
+  }
 `;

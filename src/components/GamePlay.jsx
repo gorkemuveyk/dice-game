@@ -82,4 +82,19 @@ const MainContainer = styled.main`
     justify-content: center;
     gap: 10px;
   }
+
+  @media (max-width: 576px) {
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 `;

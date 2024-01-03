@@ -5,7 +5,7 @@ import { Button } from "../styled/Button";
 const StartGame = ({ toggle }) => {
   return (
     <Container>
-      <div>
+      <div className="img">
         <img src="/img/dices.png" />
       </div>
       <div className="content">
@@ -33,6 +33,71 @@ const Container = styled.div`
     h1 {
       font-size: 96px;
       white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    .img {
+      img {
+        width: 100%;
+      }
+
+      width: 350px;
+    }
+
+    .content {
+      h1 {
+        font-size: 76px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    .img {
+      img {
+        width: 100%;
+      }
+
+      width: 250px;
+    }
+
+    .content {
+      h1 {
+        font-size: 52px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    .img {
+      img {
+        width: 100%;
+      }
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    .content {
+      h1 {
+        font-size: 52px;
+        white-space: nowrap;
+      }
+
+      Button {
+        width: 100%;
+      }
     }
   }
 `;

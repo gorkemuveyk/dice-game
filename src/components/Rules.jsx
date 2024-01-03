@@ -34,4 +34,12 @@ const RulesContainer = styled.div`
   .text {
     margin-top: 24px;
   }
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;

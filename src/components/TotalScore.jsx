@@ -24,6 +24,18 @@ const ScoreContainer = styled.div`
   p {
     font-size: 24px;
   }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 100px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 `;
 
 TotalScore.propTypes = {
