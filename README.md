@@ -17,7 +17,7 @@ Try to guess the random dice number! If the guess is successful, you win points,
 #### Clone
 
 ```
-https://github.com/gorkemuveyk/dice-game.git
+git clone https://github.com/gorkemuveyk/dice-game.git
 ```
 
 #### Package Installation
